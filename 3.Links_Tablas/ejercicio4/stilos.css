@@ -1,0 +1,45 @@
+h1{
+    font-family: verdana;
+    color: #333;
+    font-size: 20px;
+}
+
+h2{
+    font-family: verdana;
+    color: #666;
+    font-size: 15px;
+}
+
+a{
+    color: blue;
+}
+
+table, td, th {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid black;
+    font-size: 12px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 500px;
+}
+
+td, th {
+    padding: 10px;
+}
+
+thead {
+    color: white;
+    background-color: #666;
+}
+
+tbody {
+    color: black;
+    background-color: white;
+}
+
+tfoot {
+    color: black;
+    background-color: #ccc;
+}

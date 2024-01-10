@@ -1,0 +1,16 @@
+p,pre{
+    font-family: Verdana;
+    font-size: 20px;
+}
+a{
+    font-family: Verdana;
+    font-size: 20px;
+    color:blue;
+    font-style: italic;
+}
+h1{
+    font-family: Verdana;
+}
+img{
+    height: 25px;
+}

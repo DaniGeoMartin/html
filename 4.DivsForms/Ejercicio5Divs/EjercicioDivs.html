@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musica y Recetas</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <script type="text/javascript">
+    
+        function cargahtml(page){
+        document.getElementById("bodymain").innerHTML='<object type="text/html" height="650px" width="100%" data="'+page+'"></object>';
+        }
+        function cerrarsesion(){
+            alert("Adios!!")
+            cargahtml("taluego.html")
+        }
+    </script>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="cabecera">
+            <div id="cabecera_titulo">
+                <h1>Música y Recetas</h1>
+            </div>
+            <div id="cabecera_botones">
+                <a href="#" onclick="cerrarsesion()"><img src="../images/cerrar_sesion.png" alt="Log Out" height="25px" style="position: relative; right: 20px;"></a>
+            </div>
+        </div>
+        <div id="columnas">
+            <div id="menu">
+                <ul>
+                    <li><a href="#" onclick="cargahtml('../../3.Links_Tablas/ejercicio4/ejercicio4tablas.html');">Música</a></li>
+                    <li><a href="#" onclick="cargahtml('../Listas_Recetas/recetas.html');">Recetas</a></li>
+                </ul>
+                
+            </div>
+            <div id="bodymain">
+                <p>Fantástica Web de Música y Receta</p>
+                <p>El Loren ipsum</p>
+                <img src="" alt="">
+            </div>
+        </div>
+        <div id="pie">
+            <p>©<a href="https://cftic.centrosdeformacion.empleo.madrid.org/" target="_blank">CFTIC Getafe</a> 2024</p>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -7,12 +7,12 @@
     <script type="text/javascript">
 	    function loadPage(page) {
 	    	//alert("Pagina pulsada: "+page);
-	    	document.getElementById("contenido").innerHTML='<object type="text/html" data="Page1.html"></object>';
+	    	document.getElementById("contenido").innerHTML='<object type="text/html" data='+page+'></object>';
 	    	//document.getElementById("contenido").innerHTML='<h1>Hola Mundo5</h1>';
 	    }
-      function saludar(){
-        alert("Hola Mundo");
-      }
+      // function saludar(){
+      //   confirm("Hola Mundo");
+      // }
 	</script>
   </head>
   <body onload="saludar()">

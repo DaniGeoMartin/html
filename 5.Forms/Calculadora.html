@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Pocha</title>
+    <script type="text/javascript">
+        let x1;
+        let x2;
+        let operacion ='';
+        let idVal = document.getElementById(id);
+        function elimina(id){
+            idVal.value = '';
+        }
+        function añadir(id, signo){
+            console.log("operar")
+            x1 = idVal.value;                    
+            operacion = signo;
+            // alert(x1);
+            // alert(sig);
+            elimina("num");
+        }
+        function imprimir(id){           
+            document.getElementById(resu).value = eval(x1, signo, x2);
+            elimina("num");
+        }
+        function reset(){
+            x1=0, x2=0;
+            sig = '';
+            elimina("resu");
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <form action=""method="post">
+            <fieldset>
+                Número:&ensp;<legend>Calculadora</legend>
+                <input id="num" type="number" autofocus>
+                <br><br>
+                Resultado:&ensp;
+                <input id="resu" type="number" readonly>
+                <br><br>
+                <label id="suma"></label>
+                <button onclick="añadir('num','+')">+</button>
+                <label id="resta"></label>
+                <button onclick="añadir('num','-')">-</button>
+                <label id="multiplica"></label>
+                <button onclick="añadir('num','*')">*</button>
+                <label id="divide"></label>
+                <button onclick="añadir('num','/')">/</button>
+                <br><br>
+                <button onclick="imprimir()">Resultado</button> 
+                <button onclick="reset()">Reset</button>
+            </fieldset>
+            
+        </form>
+    </div>
+</body>
+</html>
